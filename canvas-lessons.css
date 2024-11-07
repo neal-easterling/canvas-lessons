@@ -91,6 +91,32 @@ section{
     transform: translateY(-40%);
 }
 
+.course-button{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    background-color: var(--clr-dark);
+}
+.course-button>img{
+    width: 110%;
+    height: auto;
+    left: -5%;
+    top: -5%;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 1;
+}
+.course-button>h4{
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
 .section-header{
     border-radius: var(--border-radius);
     background-color: #dddddd;
@@ -229,10 +255,12 @@ ul.indent-two{
 .bordered.blue{
     border-color: var(--clr-blue);
 }
-
 .blue-bg{
     background-color: var(--clr-blue);
     color: var(--clr-dark);
+}
+.blue-text{
+    color: var(--clr-blue);
 }
 .bordered.green{
     border-color: var(--clr-green);
@@ -241,12 +269,18 @@ ul.indent-two{
     background-color: var(--clr-green);
     color: var(--clr-dark);
 }
+.green-text{
+    color: var(--clr-green);
+}
 .bordered.red{
     border-color: var(--clr-red);
 }
 .red-bg{
     background-color: var(--clr-red);
     color: var(--clr-dark);
+}
+.red-text{
+    color: var(--clr-red);
 }
 .bordered.yellow{
     border-color: var(--clr-yellow);
@@ -255,12 +289,18 @@ ul.indent-two{
     background-color: var(--clr-yellow);
     color: var(--clr-dark);
 }
+.yellow-text{
+    color: var(--clr-yellow);
+}
 .bordered.orange{
     border-color: var(--clr-orange);
 }
 .orange-bg{
     background-color: var(--clr-orange);
     color: var(--clr-dark);
+}
+.orange-text{
+    color: var(--clr-orange);
 }
 .bordered.purple{
     border-color: var(--clr-purple);
@@ -269,11 +309,17 @@ ul.indent-two{
     background-color: var(--clr-purple);
     color: var(--clr-dark);
 }
+.purple-text{
+    color: var(--clr-purple);
+}
 .bordered.pink{
     border-color: var(--clr-pink);
 }
 .pink-bg{
     background-color: var(--clr-pink);
     color: var(--clr-dark);
+}
+.pink-text{
+    color: var(--clr-pink);
 }
 
