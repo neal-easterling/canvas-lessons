@@ -30,6 +30,7 @@ p{
 }
 
 section{
+    display: block;
     padding: 1em;
     margin-top: 2em;
     border-radius: var(--border-radius);
@@ -91,7 +92,18 @@ section{
     transform: translateY(-40%);
 }
 
+.course-section{
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    box-shadow: inset 1px 1px 10px #111111;
+}
+
 .course-button{
+    display: block;
     position: relative;
     width: 400px;
     height: 200px;
@@ -101,20 +113,27 @@ section{
 }
 .course-button>img{
     width: 110%;
-    height: auto;
+    min-height: 110%;
     left: -5%;
     top: -5%;
-    opacity: 0.4;
+    opacity: 0.6;
     position: absolute;
     z-index: 1;
+    transition: 300ms ease-in-out;
 }
+.course-button>img:hover{
+    opacity: 0.2;
+}
+
 .course-button>h4{
     position: absolute;
     z-index: 5;
     left: 50%;
-    top: 50%;
+    top:50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
+    text-shadow: 5px 5px 5px var(--clr-dark);
+    text-align: center;
 }
 
 .section-header{
@@ -321,5 +340,11 @@ ul.indent-two{
 }
 .pink-text{
     color: var(--clr-pink);
+}
+.light-text{
+    color: var(--clr-light);
+}
+.dark-text{
+    color: var(--clr-dark);
 }
 
